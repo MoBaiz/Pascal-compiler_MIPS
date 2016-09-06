@@ -1,0 +1,27 @@
+var a,b:integer;
+function gcd(a,b: integer):integer;
+var temp:integer;
+  function mod(a,b:integer):integer;
+   begin
+   
+    mod:=a-a/b*b;
+   end;
+begin
+    if b<>0
+      then
+            begin
+	        gcd:=gcd(b,mod(a,b));
+            end
+      else 
+	gcd:=a;
+end;
+
+begin
+write("Please Input a:");
+read(a);
+write("Please Input b:");
+read(b);
+write("gcd(",a);
+write(",",b);
+write(")=",gCd(a,b));
+end.

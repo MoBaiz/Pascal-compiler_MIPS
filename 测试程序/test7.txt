@@ -1,0 +1,23 @@
+var a:array[3] of integer;i:integer;
+procedure P1(var a:integer);
+	procedure P2(var b:integer);
+	begin
+	    write("b=",b);
+		a := 6
+	end;
+begin
+        write("a=",A);
+	P2(a+1);
+end;
+
+begin 
+        i:=1;
+        a[i]:=2;
+        a[a[i]]:=3;
+		write("i=1:",i);
+	    write("  a[a[i]]=3:",a[a[i]]);
+	    P1(a[a[i]]);
+	    write(" var a[a[i]]=6:",a[a[i]]);
+        P1:=1;
+	    write(" var i=6:"i);
+end.

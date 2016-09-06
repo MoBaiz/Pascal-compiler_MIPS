@@ -1,0 +1,36 @@
+NO  op        op1       op2       res       
+0   mod1:
+1   DIV       a         b         t_0
+2   MUL       t_0       b         t_1
+3   SUB       a         t_1       t_2
+4   ASS       t_2                 mod       
+5   RETURN                        
+6   gcd0:
+7   JEQL      b         0         lable_0   
+8   PARAMETER b         gcd       1
+9   PARAMETER a         mod       1
+10  PARAMETER b         mod       2
+11  CALL_F    mod                 
+12  PARAMETER ?mod      gcd       2
+13  CALL_F    gcd                 
+14  ASS       ?gcd                gcd       
+15  J                             lable_1   
+16  lable0:
+17  ASS       a                   gcd       
+18  lable1:
+19  RETURN                        
+20  main:
+21  PRINTF_S  Please Input a:          
+22  SCANF     a                   
+23  PRINTF_S  Please Input b:          
+24  SCANF     b                   
+25  PRINTF_S  gcd(                
+26  PRINTF    a                   
+27  PRINTF_S  ,                   
+28  PRINTF    b                   
+29  PRINTF_S  )=                  
+30  PARAMETER a         gcd       1
+31  PARAMETER b         gcd       2
+32  CALL_F    gcd                 
+33  PRINTF    ?gcd                
+34  RETURN                        

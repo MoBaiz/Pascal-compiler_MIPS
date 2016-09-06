@@ -1,0 +1,15 @@
+const a1=-1,a2='s',a3=116;
+var a,b,c,g:integer;d,e,f:char;
+begin
+a:=3;
+b:=4;
+c:=5;
+write("-1=",a1);
+g:=a2;
+write(" 115=",g);
+write(" 25=",a*a+b*b);
+write(" 5=",(a*a+b*b)/c);
+write(" -25=",(a*a+b*b)*a1);
+d:=a3;
+write(" t=",D);
+end.

@@ -1,0 +1,11 @@
+ ‰»În£∫
+n<0:
+Scalltime1a+b*c=-5(a+b)*c=-9
+n=0:
+Scalltime1n=0a+b*c=-5(a+b)*c=-9
+n=1:
+Scalltime1n=1a+b*c=-5(a+b)*c=-9
+n=2
+Scalltime1n=0a+b*c=-5(a+b)*c=-9
+n>=3
+Scalltime(n-1)n=2a+b*c=-5(a+b)*c=-9

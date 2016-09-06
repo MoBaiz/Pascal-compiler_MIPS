@@ -1,0 +1,48 @@
+const two=2,three=3,four=4,S='S';
+var count,num,i:integer;a:array[4] of integer;ch:char;
+procedure expressiontest;
+var a,b,c:integer;
+   begin
+   a:=1;
+   b:=+2;
+   c:=-3;
+   write("a+b*c=",a+b*c);
+   write("(a+b)*c=",(a+b)*c)
+   end;
+procedure test;
+   function SUB(var num:integer;count:integer):integer;
+     begin
+      count :=count+1; 
+       if num<three
+       then
+        sub:=count          
+       else
+        begin
+        num:=num-1;
+        sub:=sub(num,count)      
+        end     
+     end;
+	begin
+	 read(num);
+	 ch:=S;
+	 write(ch);
+	 count:=0;
+	 write("calltime",sub(num,count));   
+	 for i:=0 to 4
+	 do
+	 a[i]:=i+'a';
+	 case num of
+	    3:
+              begin
+              write("n=3");
+              write("n=2");
+              end;
+	    2:write("n=2");
+          1:write("n=1");
+	    0:write("n=0")
+	 end;
+	 expression
+	end;
+	begin
+	test
+	end.
